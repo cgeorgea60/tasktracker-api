@@ -20,7 +20,7 @@ const app = express();
 
 //Middlewares
 const corsOptions = {
-  origin: "https://tasktracket-app.up.railway.app",
+  origin: "https://tasktracker-app.up.railway.app",
   credentials: true,
   optionSuccessStatus: 200,
 };
@@ -29,7 +29,7 @@ app.use(cors(corsOptions));
 app.use(function (req, res, next) {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://tasktracket-app.up.railway.app"
+    "https://tasktracker-app.up.railway.app"
   );
   next();
 });
